@@ -12,7 +12,10 @@ export const colors = {
   hoverGray: "#d1d1d1",
   baseBlack: "#111111",
   baseGrayLink: "#999999",
-  baseWhite: "#ffffff"
+  baseWhite: "#ffffff",
+  borderGray: "#dddddd",
+  baseGreen: "#3cb46e",
+  baseHoverGreen: "#37a866",
 };
 
 export const media = Object.keys(sizes).reduce((accumulator, label) => {

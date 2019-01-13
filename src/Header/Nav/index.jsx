@@ -15,6 +15,7 @@ const NavContainer = styled.nav`
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-around;
 `;
 
 const LinkToHome = styled(Link)`
@@ -65,6 +66,7 @@ const Submit = styled(Link)`
   color: ${colors.baseGrayLink};
   padding: 5px 8px;
   text-decoration: none;
+  margin-right: 12px;
   
   &:hover {
     color: ${colors.baseBlack};

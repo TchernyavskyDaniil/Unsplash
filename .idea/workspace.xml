@@ -2,25 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dafcef3-f7b7-42f5-837f-43116cba215a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Header/Nav/Dotted/icons/dottedIcon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Header/Nav/Dotted/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Header/Nav/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Header/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Socials/icons/facebookIcon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Socials/icons/instagramIcon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Socials/icons/mediumIcon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Socials/icons/twitterIcon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Socials/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Search.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/searchIcon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Widgets/icons/defaultAvatar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Widgets/icons/notificationIcon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Widgets/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Header/Nav/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Header/Nav/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Widgets/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Widgets/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/config.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -60,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Header/Nav/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+            <state relative-caret-position="391">
+              <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -72,8 +57,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Widgets/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="51" column="33" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
+            <state relative-caret-position="531">
+              <caret line="58" column="46" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="46" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
               </folding>
@@ -82,13 +67,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Header/Nav/Dotted/index.jsx">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="186" column="18" selection-start-line="186" selection-start-column="18" selection-end-line="194" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#55#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="83">
+              <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -98,6 +80,18 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="322">
               <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Header/Nav/Dotted/index.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="186" column="18" selection-start-line="186" selection-start-column="18" selection-end-line="194" selection-end-column="20" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
               </folding>
@@ -120,8 +114,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/assets/styles/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            <state relative-caret-position="391">
+              <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -155,7 +149,6 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/logo.svg" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/UI/searchIcon.svg" />
         <option value="$PROJECT_DIR$/src/assets/styles/config.jsx" />
         <option value="$PROJECT_DIR$/src/index.css" />
@@ -164,20 +157,21 @@
         <option value="$PROJECT_DIR$/src/Header/Nav/Dotted/icons/instagramIcon.svg" />
         <option value="$PROJECT_DIR$/src/Header/Nav/Dotted/icons/facebookIcon.svg" />
         <option value="$PROJECT_DIR$/src/Header/Nav/Dotted/icons/dottedIcon.svg" />
-        <option value="$PROJECT_DIR$/src/assets/styles/config.js" />
         <option value="$PROJECT_DIR$/src/Header/Nav/Socials/index.jsx" />
         <option value="$PROJECT_DIR$/src/Widgets/icons/notificationIcon.svg" />
         <option value="$PROJECT_DIR$/src/Header/index.jsx" />
         <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/Widgets/index.jsx" />
         <option value="$PROJECT_DIR$/src/UI/Search.jsx" />
         <option value="$PROJECT_DIR$/src/Socials/icons/mediumIcon.svg" />
         <option value="$PROJECT_DIR$/src/Socials/icons/twitterIcon.svg" />
         <option value="$PROJECT_DIR$/src/Socials/icons/facebookIcon.svg" />
         <option value="$PROJECT_DIR$/src/Socials/icons/instagramIcon.svg" />
-        <option value="$PROJECT_DIR$/src/Header/Nav/index.jsx" />
         <option value="$PROJECT_DIR$/src/Socials/index.jsx" />
         <option value="$PROJECT_DIR$/src/Header/Nav/Dotted/index.jsx" />
+        <option value="$PROJECT_DIR$/src/Header/Nav/index.jsx" />
+        <option value="$PROJECT_DIR$/src/assets/styles/config.js" />
+        <option value="$PROJECT_DIR$/src/Widgets/index.jsx" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -330,12 +324,12 @@
       <updated>1547373510552</updated>
       <workItem from="1547373512931" duration="2758000" />
       <workItem from="1547382245456" duration="7488000" />
-      <workItem from="1547391770034" duration="5349000" />
+      <workItem from="1547391770034" duration="6113000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15595000" />
+    <option name="totallyTimeSpent" value="16359000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -395,13 +389,6 @@
     <entry file="file://$PROJECT_DIR$/src/logo.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -445,13 +432,6 @@
     <entry file="file://$PROJECT_DIR$/src/Widgets/icons/notificationIcon.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/styles/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -494,23 +474,30 @@
     <entry file="file://$PROJECT_DIR$/src/Socials/icons/instagramIcon.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Header/Nav/Dotted/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="186" column="18" selection-start-line="186" selection-start-column="18" selection-end-line="194" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Header/Nav/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        <state relative-caret-position="391">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Widgets/index.jsx">
+    <entry file="file://$PROJECT_DIR$/src/assets/styles/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="51" column="33" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="391">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -524,13 +511,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Header/Nav/Dotted/index.jsx">
+    <entry file="file://$PROJECT_DIR$/src/Widgets/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="186" column="18" selection-start-line="186" selection-start-column="18" selection-end-line="194" selection-end-column="20" />
+        <state relative-caret-position="531">
+          <caret line="58" column="46" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="46" />
           <folding>
             <element signature="e#0#55#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
         </state>
       </provider>
     </entry>
