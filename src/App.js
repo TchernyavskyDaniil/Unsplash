@@ -1,11 +1,16 @@
-import React, { Component } from "react";
+import React, { PureComponent, Fragment } from "react";
+import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
 
-class App extends Component {
+import Header from "./Header";
+
+class App extends PureComponent {
   render() {
     return (
-      <div className="App">
-
-      </div>
+      <BrowserRouter>
+        <Fragment>
+          <Header />
+        </Fragment>
+      </BrowserRouter>
     );
   }
 }
