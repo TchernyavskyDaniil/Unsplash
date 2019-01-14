@@ -16,6 +16,7 @@ export const colors = {
   borderGray: "#dddddd",
   baseGreen: "#3cb46e",
   baseHoverGreen: "#37a866",
+  lightGray: '#f5f5f5',
 };
 
 export const media = Object.keys(sizes).reduce((accumulator, label) => {

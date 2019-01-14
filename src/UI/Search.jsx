@@ -1,14 +1,26 @@
 import React from "react";
 import styled from "styled-components";
+import styledMap from 'styled-map';
 
 import { colors } from "../assets/styles/config";
 import searchIcon from './searchIcon.svg';
 
-const Search = styled.form`
+export const Search = styled.form`
   height: 40px;
-  width: 35%;
-  border-radius: 24px;
-  background-color: ${colors.baseGray};
+  width: ${styledMap({
+    default: '35%',
+    maxWidth: '100%',
+    halfWidth: '50%',
+    homeWidth: '60%',
+  })};
+  border-radius: ${styledMap({
+    easyBorder: '4px',
+    default: '24px',
+  })};
+  background-color: ${styledMap({
+    easyGray: `${colors.lightGray}`,
+    default: `${colors.baseGray}`
+  })};
   font-size: 1.4rem;
   border: 1px solid transparent;
   transition: all .1s ease-out;
@@ -22,7 +34,7 @@ const Search = styled.form`
   }
 `;
 
-const SearchButton = styled.button`
+export const SearchButton = styled.button`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,7 +51,7 @@ const SearchButton = styled.button`
   margin-left: 5px;
 `;
 
-const SearchField = styled.input`
+export const SearchField = styled.input`
   margin: 0 12px;
   width: 100%;
   background: none;
@@ -48,14 +60,3 @@ const SearchField = styled.input`
   height: 20px;
   outline: none;
 `;
-
-export default () => (
-  <Search action="/search">
-    <SearchButton title="Search Unsplash demo" />
-    <SearchField
-      type="text"
-      id="search-input"
-      placeholder="Search free high-resolution photos"
-    />
-  </Search>
-)

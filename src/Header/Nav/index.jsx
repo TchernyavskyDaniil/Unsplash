@@ -2,7 +2,7 @@ import React, { PureComponent } from "react";
 import styled from "styled-components";
 import { Link, NavLink } from "react-router-dom";
 
-import Search from '../../UI/Search';
+import { Search, SearchButton, SearchField } from '../../UI/Search';
 import { colors } from "../../assets/styles/config";
 import logoSvg from '../../logo.svg';
 import Widgets from "../../Widgets";
@@ -114,7 +114,14 @@ class Nav extends PureComponent {
             Photos for everyone
           </NavDesc>
         </NavText>
-        <Search />
+        <Search action="/search">
+          <SearchButton title="Search Unsplash demo" />
+          <SearchField
+            type="text"
+            id="search-input"
+            placeholder="Search some photos here"
+          />
+        </Search>
         <Links>
           <LinkWrapper>
             <LinkNav to="/" title="Home page">
