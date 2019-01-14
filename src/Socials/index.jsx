@@ -35,66 +35,44 @@ const SocialIcon = styled.img`
   }
 `;
 
-class Socials extends PureComponent {
-  state = {
-    twitter: {
-      title: 'twitter',
-      url: 'https://twitter.com/unsplash?utm_source=unsplash&utm_medium=referral',
-    },
-    facebook: {
-      title: 'facebook',
-      url: 'https://www.facebook.com/pages/Unsplash/274126369394815?utm_source=unsplash&utm_medium=referral',
-    },
-    instagram: {
-      title: 'instagram',
-      url: 'https://instagram.com/unsplash?utm_source=unsplash&utm_medium=referral',
-    },
-    medium: {
-      title: 'medium',
-      url: 'https://medium.com/unsplash?utm_source=unsplash&utm_medium=referral',
-    },
-  };
+const socials = [
+  {
+    id: 1,
+    title: 'twitter',
+    url: 'https://twitter.com/unsplash?utm_source=unsplash&utm_medium=referral',
+    icon: twitterIcon,
+  },
+  {
+    id: 2,
+    title: 'facebook',
+    url: 'https://www.facebook.com/pages/Unsplash/274126369394815?utm_source=unsplash&utm_medium=referral',
+    icon: facebookIcon,
+  },
+  {
+    id: 3,
+    title: 'instagram',
+    url: 'https://instagram.com/unsplash?utm_source=unsplash&utm_medium=referral',
+    icon: instagramIcon,
+  },
+  {
+    id: 4,
+    title: 'medium',
+    url: 'https://medium.com/unsplash?utm_source=unsplash&utm_medium=referral',
+    icon: mediumIcon,
+  },
+];
 
-  render() {
-    const { twitter, facebook, instagram, medium } = this.state;
-
-    return (
-      <SocialsContainer>
-        <SocialContainer>
-          <Social
-            title={twitter.title}
-            href={twitter.url}
-          >
-            <SocialIcon src={twitterIcon} />
-          </Social>
-        </SocialContainer>
-        <SocialContainer>
-          <Social
-            title={facebook.title}
-            href={facebook.url}
-          >
-            <SocialIcon src={facebookIcon} />
-          </Social>
-        </SocialContainer>
-        <SocialContainer>
-          <Social
-            title={instagram.title}
-            href={instagram.url}
-          >
-            <SocialIcon src={instagramIcon} />
-          </Social>
-        </SocialContainer>
-        <SocialContainer>
-          <Social
-            title={medium.title}
-            href={medium.url}
-          >
-            <SocialIcon src={mediumIcon} />
-          </Social>
-        </SocialContainer>
-      </SocialsContainer>
-    )
-  }
-}
-
-export default Socials;
+export default () => (
+  <SocialsContainer>
+    {socials.map(social => (
+      <SocialContainer key={social.id}>
+        <Social
+          title={social.title}
+          href={social.url}
+        >
+          <SocialIcon src={social.icon} />
+        </Social>
+      </SocialContainer>
+    ))}
+  </SocialsContainer>
+)

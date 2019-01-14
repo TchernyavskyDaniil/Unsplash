@@ -9,7 +9,8 @@ import { accessKey } from "../accessConfig";
 import { Search, SearchButton, SearchField } from '../UI/Search';
 
 const SearchPhotosWrapper = styled.div`
-  background-color: ${colors.baseBlack};
+  padding-top: 50px;
+  background-color: ${props => props.color};
   background-image: ${props => `url(${props.downloadedImage})` || ''};
   background-size: cover;
   background-position: center;
@@ -19,7 +20,7 @@ const SearchPhotosWrapper = styled.div`
 const Container = styled.div`
   padding: 150px 10px;
   margin: 0 auto;
-  width: 65%;
+  width: 60%;
 `;
 
 const Title = styled.h2`
@@ -41,11 +42,13 @@ const Desc = styled.p`
   font-size: 1.8rem;
   line-height: 1.8rem;
   margin: 0 0 20px 0;
+  font-weight: 500;
 `;
 
 class SearchPhotos extends PureComponent {
   state = {
     image: null,
+    color: 'black',
   };
 
   componentDidMount() {
@@ -58,6 +61,7 @@ class SearchPhotos extends PureComponent {
         if (response.status === 200) {
           this.setState({
             image: response.data.urls.regular,
+            color: response.data.color,
             isError: false,
           })
         } else {
@@ -74,10 +78,10 @@ class SearchPhotos extends PureComponent {
   }
 
   render() {
-    const { image } = this.state;
+    const { image, color } = this.state;
 
     return (
-      <SearchPhotosWrapper downloadedImage={image}>
+      <SearchPhotosWrapper downloadedImage={image} color={color}>
         <Container>
           <Title>
             Unsplash

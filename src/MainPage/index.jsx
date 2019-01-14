@@ -1,7 +1,8 @@
-import React, { PureComponent } from "react";
+import React, { Fragment, PureComponent } from "react";
 import styled from "styled-components";
 import { Link, NavLink } from "react-router-dom";
 import SearchPhotos from "../SearchPhotos";
+import Photos from "../Photos";
 
 class MainPage extends PureComponent {
   state = {
@@ -10,7 +11,10 @@ class MainPage extends PureComponent {
 
   render() {
     return (
-      <SearchPhotos />
+      <Fragment>
+        <SearchPhotos />
+        <Photos />
+      </Fragment>
     )
   }
 }
