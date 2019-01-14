@@ -3,16 +3,18 @@ import styled from "styled-components";
 import { Link, NavLink } from "react-router-dom";
 import styledMap from "styled-map";
 import Masonry from 'react-masonry-component';
+import BottomScrollListener from 'react-bottom-scroll-listener';
 
 import { AXIOS } from "../apiConfig";
 import { accessKey } from "../accessConfig";
 
 const PhotosContainer = styled.div`
   padding: 50px 0 0 0;
-  margin: 40px;
+  margin: 40px 40px 0 40px;
   
   .search-gallery {
     padding: 0;
+    margin-bottom: 0;
   }
 `;
 
@@ -38,18 +40,11 @@ class Photos extends PureComponent {
     this.getPhotos(page);
   }
 
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
-  }
-
-  handleScroll = () => {
+  handleOnBottom = () => {
     const { page } = this.state;
 
-    if (this.photosWrapper !== null && window.pageYOffset + 400 >= this.photosWrapper.clientHeight) {
-      this.getPhotos(page + 1);
-      window.removeEventListener('scroll', this.handleScroll);
-    }
-  };
+    this.getPhotos(page + 1);
+  }
 
   getPhotos = newPage => {
     const { perPage, photos, page } = this.state;
@@ -70,10 +65,7 @@ class Photos extends PureComponent {
             localPhotos = response.data;
           }
 
-          this.setState({
-            photos: localPhotos,
-            page: newPage,
-          })
+          this.setState({ photos: localPhotos, page: newPage});
         } else {
           this.setState({
             isError: true,
@@ -86,30 +78,31 @@ class Photos extends PureComponent {
       }
     );
 
-    window.addEventListener('scroll', this.handleScroll);
   };
 
-  photosWrapper = node => this.photosWrapper = node;
+  refPhotosWrapper = node => this.setState({ pageYOffset: node });
 
   render() {
     const { photos } = this.state;
     return (
       <PhotosContainer>
         {photos !== null ? (
-          <div ref={this.photosWrapper}>
-            <Masonry
-              className={'search-gallery'} // default ''
-              elementType={'ul'} // default 'div'
-              disableImagesLoaded={false} // default false
-              updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
-            >
-              {photos.map(photo => (
-                <Photo key={photo.id}>
-                  <PhotoImage src={photo.urls.small} />
-                </Photo>
-              ))}
-            </Masonry>
-          </div>
+          <BottomScrollListener onBottom={this.handleOnBottom}>
+            <div ref={this.refPhotosWrapper}>
+              <Masonry
+                className={'search-gallery'} // default ''
+                elementType={'ul'} // default 'div'
+                disableImagesLoaded={false} // default false
+                updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
+              >
+                {photos.map(photo => (
+                  <Photo key={photo.id}>
+                    <PhotoImage src={photo.urls.small} />
+                  </Photo>
+                ))}
+              </Masonry>
+            </div>
+          </BottomScrollListener>
         ) : (
           <p> Фотографии отсутствуют </p>
         )}

@@ -67,6 +67,7 @@ const Submit = styled(Link)`
   padding: 5px 8px;
   text-decoration: none;
   margin-right: 12px;
+  white-space: nowrap;
   
   &:hover {
     color: ${colors.baseBlack};
