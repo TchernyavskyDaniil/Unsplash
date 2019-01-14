@@ -7,6 +7,7 @@ import BottomScrollListener from 'react-bottom-scroll-listener';
 
 import { AXIOS } from "../apiConfig";
 import { accessKey } from "../accessConfig";
+import Photo from "./Photo";
 
 const PhotosContainer = styled.div`
   padding: 50px 0 0 0;
@@ -18,13 +19,11 @@ const PhotosContainer = styled.div`
   }
 `;
 
-const Photo = styled.li`
+const PhotoList = styled.li`
   padding-bottom: 40px;
   list-style: none;
   padding-left: 40px;
 `;
-
-const PhotoImage = styled.img``;
 
 class Photos extends PureComponent {
   state = {
@@ -96,9 +95,14 @@ class Photos extends PureComponent {
                 updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
               >
                 {photos.map(photo => (
-                  <Photo key={photo.id}>
-                    <PhotoImage src={photo.urls.small} />
-                  </Photo>
+                  <PhotoList key={photo.id}>
+                    <Photo
+                      photoUrl={photo.urls.small}
+                      name={photo.user.name}
+                      likes={photo.likes}
+                      profileImage={photo.user.profile_image.small}
+                    />
+                  </PhotoList>
                 ))}
               </Masonry>
             </div>

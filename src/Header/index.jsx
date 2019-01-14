@@ -9,6 +9,7 @@ const HeaderContainer = styled.header`
   background-color: ${colors.baseWhite};
   width: 100%;
   border-bottom: 1px solid ${colors.baseGray};
+  box-shadow:  0 0 1px rgba(1,0,0,.1);
 `;
 
 class Header extends PureComponent {
