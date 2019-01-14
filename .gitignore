@@ -13,4 +13,4 @@ org.eclipse*
 .settings
 .DS_Store
 Thumbs.db
-src/accessConfig.js.js
+src/accessConfig.js
