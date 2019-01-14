@@ -124,11 +124,6 @@ class Nav extends PureComponent {
         </Search>
         <Links>
           <LinkWrapper>
-            <LinkNav to="/" title="Home page">
-              Home
-            </LinkNav>
-          </LinkWrapper>
-          <LinkWrapper>
             <LinkNav to="/collections" title="Collections page">
               Collections
             </LinkNav>

@@ -6,7 +6,7 @@ import facebookIcon from './icons/facebookIcon.svg';
 import instagramIcon from './icons/instagramIcon.svg';
 import mediumIcon from './icons/mediumIcon.svg';
 
-const SocialsContainer = styled.ul`
+const Socials = styled.ul`
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -63,7 +63,7 @@ const socials = [
 ];
 
 export default () => (
-  <SocialsContainer>
+  <Socials>
     {socials.map(social => (
       <SocialContainer key={social.id}>
         <Social
@@ -74,5 +74,5 @@ export default () => (
         </Social>
       </SocialContainer>
     ))}
-  </SocialsContainer>
+  </Socials>
 )

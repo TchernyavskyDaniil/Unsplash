@@ -9,10 +9,12 @@ import defaultAvatar from "./icons/defaultAvatar.jpg";
 const WidgetsContainer = styled.div`
   margin-left: 12px;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   
   &:before {
     position: absolute;
-    top: -4px;
     left: -4px;
     display: inline-block;
     width: 1px;
@@ -91,7 +93,7 @@ class Widgets extends PureComponent {
               Login
             </Login>
             <Join to="/join">
-              Join Free
+              Join
             </Join>
           </Fragment>
         )}
